@@ -12,28 +12,38 @@
         <title>WeGive</title>
     </head>
     <body>
+        <div class="alert"></div>
         <header>
             <nav>
                 <div class="logo">
-                    <a href="/index.html"><img src="/img/logo.png" alt="logo"></a>
+                    <a href="/index.html"><img src="/img/logo5.png" alt="logo"></a>
                 </div>
                 <div>
                     <button class="hamburger" onclick="toggleClass()">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
+                <div class="search">
+                    <input type="search" name="search" placeholder="Search" id="bar">
+                    <i class="fas fa-search"></i>
+                </div>
                 <div class="menu">
                     <ul>
                         <li>
                             <a class="active" href="/home-page.html">Home</a>
-                            <a href="/Sign_In.html">Sign In</a>
+                            <a href="/Sign-In.html">Sign In</a>
                             <a href="/Overview-page.html">Overview</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <div class="hero-banner"></div>
+        <div class="hero-banner">
+            <h1>Be more giving with WeGive</h1>
+        </div>
+        <div>
+            <h2>Select your charity</h2>
+        </div>
         <main></main>
         <footer>
             <div class="footer_list1">
@@ -50,15 +60,14 @@
                 <ul>
                     <li><a href="#"></a>Get in touch</li>
                     <li><a href="#"></a>Events</li>
-                    <li><a href="#"></a>Exhibitions</li>
+                    <li><a href="#"></a>lorem</li>
                     <li><a href="#"></a>FAQ</li>
-    
                 </ul>
             </div>
             <div class="footer_list3">
                 <h5>Information</h5>
                 <ul>
-                    <li><a href="#"></a>About The IS Museum</li>
+                    <li><a href="#"></a>About Us</li>
                     <li><a href="#"></a>Work With US</li>
                     <li><a href="#"></a>Privacy Policy</li>
                     <li><a href="#"></a>Terms & Conditions</li>
@@ -70,7 +79,8 @@
                 <i class="fab fa-facebook-f"></i>
             </div>
         </footer>
-        <script src="/js/hamburger-menu.js"></script>
+        <script src="/js/components/alert.js"></script>
+        <script src="/js//components/hamburger-menu.js"></script>
         <script src="/js/home.js"></script>
     </body>
 </html>
