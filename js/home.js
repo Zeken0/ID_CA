@@ -9,7 +9,7 @@ async function getCards() {
                 <h3>${result[i].name}</h3>
                 <a href="${result[i].link}"><img src="${result[i].image}"></a>
                     <p>${result[i].description}</p>
-                    <a href="sign-in.html"><button type="submit" class="btn">Give to Charity</button></a>
+                    <a href="sign-in.html"><button type="submit" class="btn">Add Charity</button></a>
                 </div>
             `;
         }

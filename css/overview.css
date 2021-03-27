@@ -132,12 +132,30 @@ label {
 .items-1 {
   display: flex;
 }
+
 .items-2 {
   display: flex;
   column-gap: 0.5rem;
 }
 
-.items-1 button {
+.btn-1 {
+  height: 5rem;
+  width: 22rem;
+  font-size: 1.8rem;
+  background-color: #d01f43;
+  color: white;
+  border-style: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  font-weight: bolder;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-2 {
   height: 5rem;
   width: 22rem;
   font-size: 1.8rem;
@@ -149,6 +167,7 @@ label {
   outline: none;
   font-weight: bolder;
 }
+
 .items-2 button {
   height: 4rem;
   width: 5rem;
@@ -174,7 +193,7 @@ label {
   font-weight: bold;
 }
 .items-3 button {
-  margin-top: 2rem;
+  margin-top: 4rem;
   height: 3.5rem;
   width: 11rem;
   margin-left: 2.3rem;
