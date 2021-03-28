@@ -25,7 +25,7 @@ submit.onclick = function (event) {
 		emailError.classList.remove('hide');
 	}
 
-    if (password.length >= 12) {
+    if (password.length >= 8) {
 		passwordError.classList.add('hide');
 		passwordError.classList.remove('show');
 	} else {

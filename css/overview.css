@@ -119,8 +119,8 @@ main {
   flex-direction: column;
   justify-content: center;
   place-items: center;
-  row-gap: 1rem;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  row-gap: 1.5rem;
+  box-shadow: 1px 1px 4px 0 rgba(0.1, 0.1, 0.1, 0.25);
 }
 
 label {
@@ -135,7 +135,8 @@ label {
 
 .items-2 {
   display: flex;
-  column-gap: 0.5rem;
+  flex-direction: row;
+  column-gap: 1rem;
 }
 
 .btn-1 {
@@ -149,6 +150,7 @@ label {
   cursor: pointer;
   outline: none;
   font-weight: bolder;
+  box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, 0.5);
 }
 
 .hide {
@@ -166,9 +168,12 @@ label {
   cursor: pointer;
   outline: none;
   font-weight: bolder;
+  box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, 0.2);
 }
 
-.items-2 button {
+.btn-3,
+.btn-4,
+.btn-5 {
   height: 4rem;
   width: 5rem;
   font-size: 1rem;
@@ -179,6 +184,12 @@ label {
   cursor: pointer;
   outline: none;
   font-weight: bolder;
+  box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, 0);
+}
+
+.checked {
+  background-color: #d01f43;
+  color: white;
 }
 
 .items-2 input {
@@ -191,12 +202,13 @@ label {
   outline: none;
   font-size: 1.2rem;
   font-weight: bold;
+  box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, 0.2);
 }
+
 .items-3 button {
   margin-top: 4rem;
   height: 3.5rem;
-  width: 11rem;
-  margin-left: 2.3rem;
+  width: 15rem;
   font-size: 1.2rem;
   background-color: #d01f43;
   color: white;
@@ -210,6 +222,64 @@ label {
   background-color: #fe365f;
 }
 
+.box-2 {
+  margin-top: 2rem;
+  background-color: white;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  row-gap: 1.5rem;
+  box-shadow: 1px 1px 4px 0 rgba(0.1, 0.1, 0.1, 0.25);
+}
+
+.items-4 {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.items-4 input {
+  height: 3.5rem;
+  width: 14rem;
+  margin-left: 1rem;
+  padding-left: 10px;
+  background-color: #efefef;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, 0.2);
+}
+
+.btn-6 {
+  height: 3.5rem;
+  width: 4rem;
+  font-size: 1rem;
+  background-color: #d01f43;
+  color: white;
+  border-style: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-6:hover {
+  background-color: #fe365f;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 0 0 0 4rem;
+  text-decoration: underline;
+}
+
 footer {
   margin-top: 3rem;
   display: grid;
@@ -221,7 +291,7 @@ footer {
   justify-content: space-evenly;
 }
 
-h5 {
+h4 {
   margin-bottom: 5px;
   font-size: 20px;
   font-family: "space mono", monospace;
@@ -269,9 +339,9 @@ footer .fa-instagram,
 
   .menu {
     display: none;
-    top: 5.3rem;
+    top: 4.72rem;
     width: 100%;
-    height: 246.5px;
+    height: 148.1px;
     background: white;
     right: 0;
     text-align: center;
@@ -314,6 +384,10 @@ footer .fa-instagram,
     background-size: cover;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   }
+
+  main {
+    width: 95%;
+  }
 }
 
 @media (max-width: 767px) /*Mobile*/ {
@@ -327,9 +401,9 @@ footer .fa-instagram,
 
   .menu {
     display: none;
-    top: 5.3rem;
+    top: 4.7rem;
     width: 100%;
-    height: 187px;
+    height: 112px;
     background: white;
     right: 0;
     text-align: center;
@@ -387,6 +461,73 @@ footer .fa-instagram,
   h2,
   h1 {
     text-align: center;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .btn-1 {
+    height: 4rem;
+    width: 14rem;
+    font-size: 1.8rem;
+    background-color: #d01f43;
+    color: white;
+    border-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    font-weight: bolder;
+  }
+
+  .btn-2 {
+    height: 4rem;
+    width: 14rem;
+    font-size: 1.8rem;
+    background-color: #efefef;
+    color: #d01f43;
+    border-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    font-weight: bolder;
+  }
+
+  .items-2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    place-items: center;
+  }
+
+  .items-2 button {
+    height: 3rem;
+    width: 4.5rem;
+    font-size: 1rem;
+  }
+
+  .items-2 input {
+    height: 3.5rem;
+    width: 20rem;
+    margin-left: 0rem;
+    padding-left: 10px;
+    background-color: #efefef;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .items-3 button {
+    margin-top: 2rem;
+    height: 3.5rem;
+    width: 14rem;
+    margin-left: 0rem;
+    font-size: 1.3rem;
   }
 
   footer {
